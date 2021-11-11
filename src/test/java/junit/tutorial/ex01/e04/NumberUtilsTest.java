@@ -39,5 +39,4 @@ class NumberUtilsTest {
 	void test0402() {
 		assertFalse(NumberUtils.isEven(7));
 	}
-	
 }
