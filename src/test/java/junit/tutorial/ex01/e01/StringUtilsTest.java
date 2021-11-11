@@ -39,4 +39,9 @@ class StringUtilsTest {
 		assertEquals("hello_world", StringUtils.toSnakeCase("HelloWorld"));
 	}
 	
+	@Test
+	@DisplayName("input \"practiceJunit\" return \"practice_junit\"")
+	void test0103() {
+		assertEquals("practice_junit", StringUtils.toSnakeCase("practiceJunit"));
+	}
 }
