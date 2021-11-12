@@ -31,13 +31,13 @@ class FizzBuzzTest {
 	}
 	
 	@Test
-	@DisplayName("input 16 return \"1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz,16\"")
+	@DisplayName("execute createFizzBuzz(16)")
 	void test() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
-		List<String> expected = new ArrayList<>();
 		String input = "1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz,16";
 		String[] inputList = input.split(",");
 		
+		List<String> expected = new ArrayList<>();
 		for (String s : inputList) {
 			expected.add(s);
 		}

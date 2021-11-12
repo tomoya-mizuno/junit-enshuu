@@ -7,6 +7,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -30,6 +31,7 @@ class CalculatorTest {
 	
 	@Test
 	@DisplayName("input \"second argument = 0\" return \"IllegalArgumentException\"")
+	@Disabled
 	void test0201() {
 		try {
 			Calculator calc = new Calculator();
@@ -38,6 +40,23 @@ class CalculatorTest {
 		} catch (IllegalArgumentException e) {
 			
 		}
+	}
+	
+	@Test
+	void test01() {
+		
+	}
+	
+	@Test
+	@Disabled
+	void test2() {
+		Calculator2 calculator2 = new Calculator2();
+		try {
+			int result = calculator2.divide(1, 0);
+		} catch (Exception e) {
+			
+		}
+		
 	}
 	
 }

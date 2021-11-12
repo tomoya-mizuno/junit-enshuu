@@ -28,7 +28,7 @@ class StringUtilsTest {
 	}
 	
 	@Test
-	@DisplayName("input \"aaa\" return \"aaa\"")
+	@DisplayName("execute ")
 	void test0101() {
 		assertEquals("aaa", StringUtils.toSnakeCase("aaa"));
 	}

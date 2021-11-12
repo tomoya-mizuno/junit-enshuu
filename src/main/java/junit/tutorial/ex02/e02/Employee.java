@@ -14,7 +14,7 @@ public class Employee {
 	
 	public static List<Employee> load(InputStream input) {
 		List<Employee> empList = new ArrayList<>();
-		try(BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
 				String[] items = line.split(",");
@@ -33,18 +33,23 @@ public class Employee {
 	public String getFirstName() {
 		return firstName;
 	}
+	
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
+	
 	public String getLastName() {
 		return lastName;
 	}
+	
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
 	public String getEmail() {
 		return email;
 	}
+	
 	public void setEmail(String email) {
 		this.email = email;
 	}

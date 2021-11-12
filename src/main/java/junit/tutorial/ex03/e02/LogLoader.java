@@ -7,7 +7,7 @@ import java.util.Map;
 public class LogLoader {
 	
 	public Map<String, String> load(String fileNae) throws IOException {
-		// ‰¼ŽÀ‘•
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		return new HashMap<String, String>();
 	}
 
